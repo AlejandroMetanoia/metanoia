@@ -50,34 +50,18 @@ const Process: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10">
           {steps.map((step, idx) => (
-            <div key={idx} className="relative pt-8 md:pt-0">
-               {/* Connecting Line (Desktop) - Behind circles */}
-               {idx !== steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-1/2 w-full h-[1px] bg-silver-200 -z-10"></div>
-              )}
-              
-              {/* Vertical Separator (Desktop) - Between texts with floating effect */}
-              {idx !== steps.length - 1 && (
-                <div className="hidden md:block absolute top-28 -right-4 w-[1px] h-32 bg-gradient-to-b from-transparent via-lilac-300 to-transparent shadow-[0_0_10px_rgba(168,85,247,0.6)] opacity-80"></div>
-              )}
-
-              <div className="flex flex-col items-center text-center h-full">
-                <div className="w-16 h-16 rounded-full bg-white border border-silver-200 flex items-center justify-center text-lilac-900 font-serif font-bold text-xl md:text-2xl mb-6 shadow-sm z-10 relative">
+            <div key={idx} className="h-full">
+              <div className="h-full bg-white border border-lilac-300 rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-[0_0_15px_rgba(168,85,247,0.15)] transition-all duration-300">
+                <div className="w-16 h-16 rounded-full bg-lilac-50 border border-lilac-100 flex items-center justify-center text-lilac-900 font-serif font-bold text-xl md:text-2xl mb-6 shadow-sm">
                   {step.number}
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold text-silver-900 mb-3">{step.title}</h3>
-                {/* Updated: Changed md:text-justify to md:text-left */}
-                <p className="text-sm md:text-base text-silver-500 leading-relaxed px-2 md:text-left md:hyphens-none">
+                <p className="text-sm md:text-base text-silver-500 leading-relaxed">
                   {renderText(step.text)}
                 </p>
               </div>
-
-               {/* Horizontal Separator (Mobile) - Between steps with floating effect */}
-               {idx !== steps.length - 1 && (
-                <div className="md:hidden w-32 h-[1px] bg-gradient-to-r from-transparent via-lilac-300 to-transparent mx-auto mt-8 shadow-[0_0_10px_rgba(168,85,247,0.6)] opacity-80"></div>
-              )}
             </div>
           ))}
         </div>
