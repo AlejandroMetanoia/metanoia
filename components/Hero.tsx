@@ -70,14 +70,14 @@ const Hero: React.FC = () => {
 
             {/* Text Group */}
             {/* Text Group */}
-            <div className="space-y-2 mt-4 md:mt-48">
+            <div className="mt-4 md:mt-48">
               <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-2 drop-shadow-lg">
                 Inteligencia Artificial & Estrategia
               </h2>
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-1 mix-blend-multiply drop-shadow-2xl">
                 Alejandro Robin
               </h1>
-              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-2xl font-medium mt-52">
+              <p className="text-lg text-white max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-xl font-medium mt-[25vh]">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
             </div>
