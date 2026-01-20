@@ -71,25 +71,25 @@ const Hero: React.FC = () => {
             {/* Text Group */}
             {/* Text Group */}
             <div className="mt-4 md:mt-80">
-              <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-2 drop-shadow-lg">
+              <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl">
                 Inteligencia Artificial & Estrategia
               </h2>
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-1 mix-blend-multiply drop-shadow-2xl">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mb-1 mix-blend-normal drop-shadow-xl">
                 Alejandro Robin
               </h1>
-              <p className="text-lg text-white max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-xl font-medium mt-[25vh]">
+
+              <div className="flex flex-col sm:flex-row items-center justify-center mt-[25vh]">
+                <GradientButton
+                  onClick={() => scrollToSection('proceso')}
+                  className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
+                >
+                  Conocer Más
+                </GradientButton>
+              </div>
+
+              <p className="text-lg text-white max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-xl font-medium mt-8">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
-            </div>
-
-            {/* Buttons Group */}
-            <div className="flex flex-col sm:flex-row items-center justify-center mt-8">
-              <GradientButton
-                onClick={() => scrollToSection('proceso')}
-                className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
-              >
-                Conocer Más
-              </GradientButton>
             </div>
 
           </div>
