@@ -23,21 +23,20 @@ const Navbar: React.FC = () => {
   };
 
   const navLinks = [
+    { name: 'Proyectos', id: 'proyectos' },
     { name: 'Proceso', id: 'proceso' },
-    { name: 'Precios', id: 'precios' },
     { name: 'FAQ', id: 'faq' },
   ];
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-pearl/80 backdrop-blur-md border-b border-silver-100 py-4' 
+    <nav
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled
+          ? 'bg-pearl/80 backdrop-blur-md border-b border-silver-100 py-4'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <button 
+        <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className={`text-2xl font-serif italic font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-silver-900' : 'text-silver-900'}`}
         >
@@ -55,7 +54,7 @@ const Navbar: React.FC = () => {
               {link.name}
             </button>
           ))}
-          <GradientButton 
+          <GradientButton
             onClick={() => scrollToSection('contacto')}
             className="px-6 py-2 min-w-[120px] rounded-full text-sm"
           >
@@ -64,7 +63,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-silver-900"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -84,7 +83,7 @@ const Navbar: React.FC = () => {
               {link.name}
             </button>
           ))}
-          <GradientButton 
+          <GradientButton
             onClick={() => scrollToSection('contacto')}
             className="w-full"
           >
