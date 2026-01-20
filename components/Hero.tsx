@@ -71,15 +71,15 @@ const Hero: React.FC = () => {
             {/* Text Group */}
             {/* Text Group */}
             {/* Text Group - Decoupled */}
-            <h2 className="absolute top-[35vh] left-0 right-0 text-center mx-auto text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl z-30">
+            <h2 className="absolute top-[40vh] left-0 right-0 text-center mx-auto text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl z-30">
               Inteligencia Artificial & Estrategia
             </h2>
 
-            <h1 className="absolute top-[40vh] left-0 right-0 text-center mx-auto text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mix-blend-normal drop-shadow-xl z-30">
+            <h1 className="absolute top-[50vh] left-0 right-0 text-center mx-auto text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mix-blend-normal drop-shadow-xl z-30">
               Alejandro Robin
             </h1>
 
-            <div className="absolute top-[60vh] left-0 right-0 flex justify-center z-30">
+            <div className="absolute top-[70vh] left-0 right-0 flex justify-center z-30">
               <GradientButton
                 onClick={() => scrollToSection('proceso')}
                 className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
