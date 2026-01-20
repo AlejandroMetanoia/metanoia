@@ -54,14 +54,11 @@ const Hero: React.FC = () => {
             transition: 'transform 0.05s linear' // Smooth out jitter
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pearl/20 to-pearl z-10 mix-blend-overlay"></div>
           <img
             src="/alejandro-robin-hero.jpg"
             alt="Alejandro Robin"
             className="w-full h-full object-cover object-center"
           />
-          {/* Overlay for readability */}
-          <div className="absolute inset-0 bg-white/10 backdrop-contrast-125 z-0"></div>
         </div>
 
         {/* Content Overlay */}
@@ -80,13 +77,13 @@ const Hero: React.FC = () => {
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-1 mix-blend-multiply drop-shadow-2xl">
                 Alejandro Robin
               </h1>
-              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-md font-medium mt-8">
+              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-md font-medium mt-16">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
             </div>
 
             {/* Buttons Group */}
-            <div className="flex flex-col sm:flex-row items-center justify-center mt-12 sm:mt-16 md:mt-24">
+            <div className="flex flex-col sm:flex-row items-center justify-center mt-6">
               <GradientButton
                 onClick={() => scrollToSection('proceso')}
                 className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
