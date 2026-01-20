@@ -70,23 +70,22 @@ const Hero: React.FC = () => {
 
             {/* Text Group */}
             {/* Text Group */}
-            <div className="mt-4 md:mt-80">
-              <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl">
-                Inteligencia Artificial & Estrategia
-              </h2>
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mb-1 mix-blend-normal drop-shadow-xl">
-                Alejandro Robin
-              </h1>
+            {/* Text Group - Decoupled */}
+            <h2 className="absolute top-[40vh] left-0 right-0 text-center mx-auto text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-white mb-2 drop-shadow-xl z-30">
+              Inteligencia Artificial & Estrategia
+            </h2>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center mt-[13vh]">
-                <GradientButton
-                  onClick={() => scrollToSection('proceso')}
-                  className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
-                >
-                  Conocer Más
-                </GradientButton>
-              </div>
+            <h1 className="absolute top-[45vh] left-0 right-0 text-center mx-auto text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mix-blend-normal drop-shadow-xl z-30">
+              Alejandro Robin
+            </h1>
 
+            <div className="absolute top-[65vh] left-0 right-0 flex justify-center z-30">
+              <GradientButton
+                onClick={() => scrollToSection('proceso')}
+                className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
+              >
+                Conocer Más
+              </GradientButton>
             </div>
 
             <p className="absolute bottom-10 left-0 right-0 text-lg text-white text-center max-w-2xl mx-auto px-4 leading-relaxed drop-shadow-xl font-medium">
