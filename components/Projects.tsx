@@ -67,7 +67,7 @@ const Projects: React.FC = () => {
                         Portafolio
                     </span>
                     <h2 className="text-4xl md:text-5xl font-serif text-silver-900 animate-fade-in-up">
-                        Proyectos Selectos
+                        Proyectos
                     </h2>
                 </div>
 
@@ -99,7 +99,7 @@ const Projects: React.FC = () => {
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className="min-w-[85vw] md:min-w-[600px] snap-center group relative overflow-hidden rounded-3xl bg-silver-50 cursor-pointer"
+                        className="min-w-[90vw] md:min-w-[80vw] snap-center group relative overflow-hidden bg-silver-50 cursor-pointer"
                     >
                         {/* Image Layer */}
                         <div className="aspect-[16/9] overflow-hidden">
