@@ -46,13 +46,14 @@ const Projects: React.FC = () => {
 
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
-            const scrollAmount = 400; // Adjust scroll distance
-            const currentScroll = scrollContainerRef.current.scrollLeft;
+            const container = scrollContainerRef.current;
+            const scrollAmount = container.clientWidth * 0.7; // Scroll by roughly one card width
+            const currentScroll = container.scrollLeft;
             const targetScroll = direction === 'left'
                 ? currentScroll - scrollAmount
                 : currentScroll + scrollAmount;
 
-            scrollContainerRef.current.scrollTo({
+            container.scrollTo({
                 left: targetScroll,
                 behavior: 'smooth'
             });
@@ -99,7 +100,7 @@ const Projects: React.FC = () => {
                 {projects.map((project) => (
                     <div
                         key={project.id}
-                        className="min-w-[90vw] md:min-w-[80vw] snap-center group relative overflow-hidden bg-silver-50 cursor-pointer"
+                        className="min-w-[90vw] md:min-w-[70vw] snap-center group relative overflow-hidden bg-silver-50 cursor-pointer"
                     >
                         {/* Image Layer */}
                         <div className="aspect-[16/9] overflow-hidden">
