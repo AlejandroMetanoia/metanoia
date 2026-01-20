@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pearl/20 to-pearl z-10 mix-blend-overlay"></div>
           <img
-            src="https://yrqlsyfpunmiisijauob.supabase.co/storage/v1/object/sign/Web/0109-ezgif.com-video-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iOTA1MTQzYy05ZWU2LTQ3YTQtODRhNy04ZDYxZDkwMDE0ZTgiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJXZWIvMDEwOS1lemdpZi5jb20tdmlkZW8tdG8td2VicC1jb252ZXJ0ZXIud2VicCIsImlhdCI6MTc2Nzk1NjU4NywiZXhwIjoxODMxMDI4NTg3fQ.zrRxiI3_wvcDjOtznkq5_Ws3nl2s7aaWRgHsFrfeQUE"
-            alt="AI Transformation"
+            src="/alejandro-robin-hero.jpg"
+            alt="Alejandro Robin"
             className="w-full h-full object-cover object-center"
           />
           {/* Overlay for readability */}
@@ -73,16 +73,16 @@ const Hero: React.FC = () => {
 
             {/* Text Group */}
             <div className="space-y-4 mt-4 md:mt-8">
-              <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-4">
+              <h2 className="text-xl md:text-2xl font-light tracking-[0.3em] uppercase text-silver-900 mb-4 drop-shadow-md">
                 Inteligencia Artificial & Estrategia
               </h2>
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-2 mix-blend-multiply">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-2 mix-blend-multiply drop-shadow-lg">
                 Alejandro Robin
               </h1>
-              <p className="text-2xl md:text-4xl font-light text-silver-500 mb-8 tracking-wide">
+              <p className="text-2xl md:text-4xl font-light text-silver-500 mb-8 tracking-wide drop-shadow-md">
                 Transformación de pensamiento
               </p>
-              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-sm">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
             </div>
