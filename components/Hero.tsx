@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
               </GradientButton>
             </div>
 
-            <p className="absolute bottom-10 left-0 right-0 text-lg text-white text-center max-w-2xl mx-auto px-4 leading-relaxed drop-shadow-xl font-medium">
+            <p className="absolute bottom-10 left-8 text-lg text-white text-left max-w-2xl px-4 leading-relaxed drop-shadow-xl font-medium">
               Redefinimos el futuro de su empresa integrando inteligencia artificial.
             </p>
           </div>
