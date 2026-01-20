@@ -77,13 +77,13 @@ const Hero: React.FC = () => {
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-silver-900 tracking-tighter mb-1 mix-blend-multiply drop-shadow-2xl">
                 Alejandro Robin
               </h1>
-              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-md font-medium mt-16">
+              <p className="text-lg text-silver-600 max-w-2xl mx-auto mb-4 leading-relaxed drop-shadow-2xl font-medium mt-32">
                 Redefinimos el futuro de su empresa integrando inteligencia artificial.
               </p>
             </div>
 
             {/* Buttons Group */}
-            <div className="flex flex-col sm:flex-row items-center justify-center mt-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center mt-8">
               <GradientButton
                 onClick={() => scrollToSection('proceso')}
                 className="px-6 py-3 text-sm md:px-8 md:py-4 md:text-base"
