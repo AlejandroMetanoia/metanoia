@@ -33,7 +33,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="scroll-mt-24 h-screen flex flex-col justify-center bg-white border-t border-silver-100">
+    <section id="faq" className="pt-28 h-screen flex flex-col bg-white border-t border-silver-100">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm mb-2 block">Dudas Comunes</span>

@@ -40,9 +40,9 @@ const Process: React.FC = () => {
   };
 
   return (
-    <section id="proceso" className="bg-black relative h-screen scroll-mt-24 overflow-hidden flex flex-col md:flex-row">
+    <section id="proceso" className="bg-black relative h-screen pt-28 overflow-hidden flex flex-col md:flex-row">
       {/* Left Column: Content */}
-      <div className="w-full md:w-1/2 px-6 h-full flex flex-col justify-center">
+      <div className="w-full md:w-1/2 px-6 h-full flex flex-col">
         <div className="max-w-xl mx-auto md:mx-0 md:ml-auto md:pr-12 w-full">
           <div className="text-left mb-6">
             <span className="text-lilac-500 font-medium tracking-widest uppercase text-xs md:text-sm mb-1 block">Metodología</span>
