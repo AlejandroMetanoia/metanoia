@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               Inteligencia Artificial & Estrategia
             </h2>
 
-            <h1 className="absolute top-[48vh] left-0 right-0 text-center mx-auto text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mix-blend-normal drop-shadow-xl z-30">
+            <h1 className="absolute top-[48vh] left-0 right-0 text-center mx-auto text-6xl md:text-8xl lg:text-9xl font-serif italic font-bold text-white tracking-tighter mix-blend-normal drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] z-30">
               Alejandro Robin
             </h1>
 
