@@ -13,10 +13,11 @@ interface Project {
 const projects: Project[] = [
     {
         id: 1,
-        title: "NeuroFinance Core",
-        category: "Fintech AI",
-        description: "Sistema de predicción de mercados basado en análisis de sentimiento en tiempo real y patrones históricos complejos.",
-        image: "https://images.unsplash.com/photo-1611974765270-ca1258634369?auto=format&fit=crop&q=80&w=800&h=600",
+        title: "Neverita",
+        category: "App Web para Seguimiento de Dieta",
+        description: "Con ayuda de la IA, hemos creado esta aplicación web con funciones inteligentes, para registrar alimentos y llevar un seguimiento de dieta. Haz click para echarle un vistazo.",
+        image: "/neverita-project.png",
+        link: "https://neverita-indol.vercel.app/"
     },
     {
         id: 2,
@@ -60,6 +61,12 @@ const Projects: React.FC = () => {
         }
     };
 
+    const handleProjectClick = (link?: string) => {
+        if (link) {
+            window.location.href = link;
+        }
+    };
+
     return (
         <section id="proyectos" className="py-24 bg-pearl border-b border-silver-100 overflow-hidden">
             <div className="container mx-auto px-6 mb-12 flex items-end justify-between">
@@ -100,6 +107,7 @@ const Projects: React.FC = () => {
                 {projects.map((project) => (
                     <div
                         key={project.id}
+                        onClick={() => handleProjectClick(project.link)}
                         className="min-w-[90vw] md:min-w-[70vw] snap-center group relative overflow-hidden bg-silver-50 cursor-pointer"
                     >
                         {/* Image Layer */}
