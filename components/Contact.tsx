@@ -3,7 +3,7 @@ import { GradientButton } from './ui/gradient-button';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contacto" className="py-24 bg-silver-900 text-pearl relative overflow-hidden">
+    <section id="contacto" className="pt-24 pb-12 bg-silver-900 text-pearl relative overflow-hidden">
       {/* Abstract decorative circles */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-lilac-900/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
@@ -49,12 +49,12 @@ const Contact: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Página Web (Optional)</label>
+                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Página Web (Opcional)</label>
                 <input type="text" className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors" placeholder="www.tuempresa.com" />
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Mensaje (Optional)</label>
+                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Mensaje (Opcional)</label>
                 <textarea rows={4} className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors resize-none"></textarea>
               </div>
 
