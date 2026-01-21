@@ -68,13 +68,13 @@ const Projects: React.FC = () => {
     };
 
     return (
-        <section id="proyectos" className="py-24 bg-pearl border-b border-silver-100 overflow-hidden">
+        <section id="proyectos" className="py-24 bg-gray-50 border-b border-silver-100 overflow-hidden">
             <div className="container mx-auto px-6 mb-12 flex items-end justify-between">
                 <div>
                     <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm mb-2 block animate-fade-in">
                         Portafolio
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-serif text-silver-900 animate-fade-in-up">
+                    <h2 className="text-4xl md:text-5xl font-serif text-black animate-fade-in-up">
                         Proyectos
                     </h2>
                 </div>
