@@ -68,8 +68,8 @@ const Projects: React.FC = () => {
     };
 
     return (
-        <section id="proyectos" className="py-24 bg-gray-50 border-b border-silver-100 overflow-hidden">
-            <div className="container mx-auto px-6 mb-12 flex items-end justify-between">
+        <section id="proyectos" className="h-screen bg-gray-50 border-b border-silver-100 overflow-hidden flex flex-col justify-center relative">
+            <div className="container mx-auto px-6 mb-8 flex items-end justify-between flex-shrink-0">
                 <div>
                     <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm mb-2 block animate-fade-in">
                         Portafolio
@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
             {/* Horizontal Scroll Container */}
             <div
                 ref={scrollContainerRef}
-                className="flex overflow-x-auto gap-8 px-6 pb-12 snap-x snap-mandatory no-scrollbar"
+                className="flex overflow-x-auto gap-8 px-6 pb-4 snap-x snap-mandatory no-scrollbar flex-shrink-0"
                 style={{ scrollPaddingLeft: '24px', scrollPaddingRight: '24px' }}
             >
                 {projects.map((project) => (

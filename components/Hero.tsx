@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
   const blur = scrollProgress * 8;
 
   return (
-    <div ref={containerRef} className="relative h-[150vh] w-full">
+    <div ref={containerRef} className="relative h-[120vh] w-full">
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-pearl">
 
         {/* Background Layer */}
