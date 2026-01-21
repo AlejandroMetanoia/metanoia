@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
 
     const handleProjectClick = (link?: string) => {
         if (link) {
-            window.location.href = link;
+            window.open(link, '_blank');
         }
     };
 
@@ -124,7 +124,7 @@ const Projects: React.FC = () => {
                         <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 transform transition-transform duration-500 translate-y-2 group-hover:translate-y-0">
                             <div className="flex justify-between items-start mb-4">
                                 <div>
-                                    <span className="text-lilac-300 text-sm font-medium tracking-wider uppercase mb-2 block">
+                                    <span className="text-gray-300 text-sm font-medium tracking-wider uppercase mb-2 block">
                                         {project.category}
                                     </span>
                                     <h3 className="text-3xl font-serif text-white mb-2">
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
                                 </div>
                             </div>
 
-                            <p className="text-silver-300 text-lg line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
+                            <p className="text-lilac-300 text-lg line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
                                 {project.description}
                             </p>
                         </div>
