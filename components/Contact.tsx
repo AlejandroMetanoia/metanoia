@@ -19,8 +19,8 @@ const Contact: React.FC = () => {
 
             <div className="space-y-4 text-silver-300">
               <p>Madrid, España</p>
-              <p>halo@alejandrorobin.com</p>
-              <p>+34 912 345 678</p>
+              <p>contact@alejandrorobin.com</p>
+              <p>+34 682 432 182</p>
             </div>
           </div>
 
@@ -37,14 +37,25 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Email</label>
-                <input type="email" className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors" placeholder="juan@empresa.com" />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Sector</label>
+                  <input type="text" className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors" placeholder="Tecnología" />
+                </div>
+                <div>
+                  <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Email</label>
+                  <input type="email" className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors" placeholder="juan@empresa.com" />
+                </div>
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Mensaje</label>
-                <textarea rows={4} className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors resize-none" placeholder="¿Cómo podemos ayudarle?"></textarea>
+                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Página Web (Optional)</label>
+                <input type="text" className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors" placeholder="www.tuempresa.com" />
+              </div>
+
+              <div>
+                <label className="block text-xs uppercase tracking-wider text-silver-500 mb-2">Mensaje (Optional)</label>
+                <textarea rows={4} className="w-full bg-transparent border-b border-silver-700 py-2 text-white focus:outline-none focus:border-lilac-500 transition-colors resize-none"></textarea>
               </div>
 
               <GradientButton type="button" className="w-full mt-4">
