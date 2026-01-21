@@ -3,28 +3,28 @@ import React from 'react';
 const steps = [
   {
     number: "01",
-    title: "Estudio",
-    text: "Analizaremos tus procesos actuales *de forma gratuita* y entenderemos en qué áreas la IA te ahorraría *dinero* y *horas* de trabajo."
+    title: "Diagnóstico y Visión",
+    text: "Realizamos una inmersión inicial gratuita para detectar fricciones operativas y oportunidades de crecimiento. Alineamos el potencial de la IA con tus metas para sentar las bases de una transformación real."
   },
   {
     number: "02",
-    title: "Honestidad",
-    text: "Si, por el contrario su empresa *no necesita* IA ahora mismo (o creemos que no podemos ayudarle), *se informará* con total honestidad."
+    title: "Diseño de Solución y ROI",
+    text: "Modelamos la arquitectura técnica y definimos una inversión adaptada estrictamente al retorno (ROI) esperado. Aseguramos que cada recurso destinado genere un impacto directo, tangible y medible en tu rentabilidad."
   },
   {
     number: "03",
-    title: "Demostración",
-    text: "Diseñamos la infraestructura. La prueba en su empresa, *sin compromiso*. Si no resulta productivo o no ve el valor, quedará en una *experiencia gratuita*."
+    title: "Desarrollo y Arquitectura Inteligente",
+    text: "Construimos sistemas escalables utilizando los stacks de IA más avanzados. Integramos soluciones personalizadas de forma orgánica en tus flujos de trabajo, transformando la visión estratégica en una herramienta operativa potente."
   },
   {
     number: "04",
-    title: "Implementación",
-    text: "Si funciona, definimos detalles, precios, e integramos el *sistema final*."
+    title: "Optimización e Iteración de Valor",
+    text: "Refinamos la solución mediante pruebas de estrés y análisis de datos reales. Ajustamos cada parámetro para garantizar precisión máxima y un rendimiento óptimo antes del despliegue final en tu organización."
   },
   {
     number: "05",
-    title: "Evolución",
-    text: "La IA se encuentra en constante evolución. *Nosotros* nos encargamos de integrar las *últimas novedades* para asegurar una *mejora* constante."
+    title: "Implementación y Escalado",
+    text: "Lanzamos la solución y acompañamos a tu equipo en la adopción tecnológica. Diseñamos sistemas preparados para evolucionar, asegurando que tu ventaja competitiva crezca y se sostenga a largo plazo."
   }
 ];
 
@@ -40,27 +40,27 @@ const Process: React.FC = () => {
   };
 
   return (
-    <section id="proceso" className="bg-black relative h-screen pt-28 overflow-hidden flex flex-col md:flex-row">
+    <section id="proceso" className="bg-black relative h-screen pt-20 overflow-hidden flex flex-col md:flex-row">
       {/* Left Column: Content */}
-      <div className="w-full md:w-1/2 px-6 h-full flex flex-col">
+      <div className="w-full md:w-1/2 px-6 h-full flex flex-col justify-center pb-8">
         <div className="max-w-xl mx-auto md:mx-0 md:ml-auto md:pr-12 w-full">
-          <div className="text-left mb-6">
+          <div className="text-left mb-4">
             <span className="text-lilac-500 font-medium tracking-widest uppercase text-xs md:text-sm mb-1 block">Metodología</span>
-            <h2 className="text-3xl md:text-5xl font-serif text-white">
+            <h2 className="text-2xl md:text-4xl font-serif text-white">
               ¿Cómo Trabajamos?
             </h2>
           </div>
 
-          <div className="flex flex-col gap-3 relative z-10">
+          <div className="flex flex-col gap-2 relative z-10">
             {steps.map((step, idx) => (
               <div key={idx} className="w-full">
-                <div className="bg-gray-200 border border-gray-300 p-3 px-5 flex flex-row items-center text-left shadow-lg hover:-translate-y-1 transition-all duration-300 gap-4">
-                  <div className="min-w-[2.5rem] w-10 h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-purple-700 font-serif font-bold text-lg shadow-sm">
+                <div className="bg-gray-200 border border-gray-300 p-2 md:p-3 px-4 flex flex-row items-center text-left shadow-lg hover:-translate-y-1 transition-all duration-300 gap-3">
+                  <div className="min-w-[2rem] w-8 h-8 md:w-10 md:h-10 rounded-full bg-white border border-gray-300 flex items-center justify-center text-purple-700 font-serif font-bold text-base md:text-lg shadow-sm">
                     {step.number}
                   </div>
                   <div>
-                    <h3 className="text-base md:text-lg font-semibold text-purple-700 mb-0.5">{step.title}</h3>
-                    <p className="text-xs md:text-sm text-black leading-snug">
+                    <h3 className="text-sm md:text-base font-semibold text-purple-700 mb-0.5">{step.title}</h3>
+                    <p className="text-[10px] md:text-xs text-black leading-snug">
                       {renderText(step.text)}
                     </p>
                   </div>
