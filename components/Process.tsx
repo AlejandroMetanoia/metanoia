@@ -40,30 +40,45 @@ const Process: React.FC = () => {
   };
 
   return (
-    <section id="proceso" className="py-24 bg-black relative">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm md:text-base mb-2 block">Metodología</span>
-          <h2 className="text-4xl md:text-6xl font-serif text-white">
-            ¿Cómo Trabajamos?
-          </h2>
-        </div>
+    <section id="proceso" className="bg-black relative min-h-screen flex flex-col md:flex-row">
+      {/* Left Column: Content */}
+      <div className="w-full md:w-1/2 px-6 py-24 flex flex-col justify-center">
+        <div className="max-w-xl mx-auto md:mx-0 md:ml-auto md:pr-12">
+          <div className="text-left mb-16">
+            <span className="text-lilac-500 font-medium tracking-widest uppercase text-sm md:text-base mb-2 block">Metodología</span>
+            <h2 className="text-4xl md:text-6xl font-serif text-white">
+              ¿Cómo Trabajamos?
+            </h2>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10">
-          {steps.map((step, idx) => (
-            <div key={idx} className="h-full">
-              <div className="h-full bg-gray-200 border border-gray-300 p-6 flex flex-col items-center text-center shadow-2xl hover:-translate-y-2 transition-all duration-300">
-                <div className="w-16 h-16 rounded-full bg-white border border-gray-300 flex items-center justify-center text-purple-700 font-serif font-bold text-xl md:text-2xl mb-6 shadow-sm">
-                  {step.number}
+          <div className="flex flex-col gap-8 relative z-10">
+            {steps.map((step, idx) => (
+              <div key={idx} className="w-full">
+                <div className="bg-gray-200 border border-gray-300 p-8 flex flex-row items-start text-left shadow-2xl hover:-translate-y-2 transition-all duration-300 gap-6">
+                  <div className="min-w-[4rem] w-16 h-16 rounded-full bg-white border border-gray-300 flex items-center justify-center text-purple-700 font-serif font-bold text-xl md:text-2xl shadow-sm">
+                    {step.number}
+                  </div>
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-semibold text-purple-700 mb-2">{step.title}</h3>
+                    <p className="text-sm md:text-base text-black leading-relaxed">
+                      {renderText(step.text)}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-purple-700 mb-3">{step.title}</h3>
-                <p className="text-sm md:text-base text-black leading-relaxed">
-                  {renderText(step.text)}
-                </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </div>
+
+      {/* Right Column: Image */}
+      <div className="w-full md:w-1/2 h-[50vh] md:h-auto sticky top-0 md:relative">
+        <img
+          src="/process-image.png"
+          alt="Process"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent md:bg-gradient-to-r md:from-black md:via-transparent md:to-transparent"></div>
       </div>
     </section>
   );
